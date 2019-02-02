@@ -1,7 +1,5 @@
 # node-app-engine-standard-scaffolder
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/travi/node-app-engine-standard-scaffolder.svg)](https://greenkeeper.io/)
-
 host scaffolder for [node.js](https://nodejs.org/) applications hosted on [app-engine standard](https://cloud.google.com/appengine/docs/standard/)
 
 <!-- status badges -->
@@ -27,6 +25,7 @@ $ npm install @travi/node-app-engine-standard-scaffolder --save-prod
 [![Commitizen friendly][commitizen-badge]][commitizen-link]
 [![semantic-release][semantic-release-badge]][semantic-release-link]
 [![PRs Welcome][PRs-badge]][PRs-link]
+[![Greenkeeper badge](https://badges.greenkeeper.io/travi/node-app-engine-standard-scaffolder.svg)](https://greenkeeper.io/)
 
 ### Dependencies
 

@@ -1,5 +1,6 @@
 import {assert} from 'chai';
 import sinon from 'sinon';
+import any from '@travi/any';
 import * as config from '../../src/config';
 import scaffold from '../../src/scaffolder';
 
@@ -15,10 +16,11 @@ suite('scaffolder', () => {
   teardown(() => sandbox.restore());
 
   test('that the config files are generated', async () => {
+    const projectRoot = any.string();
     config.default.resolves();
 
-    assert.deepEqual(await scaffold(), {});
+    assert.deepEqual(await scaffold({projectRoot}), {});
 
-    assert.calledOnce(config.default);
+    assert.calledWith(config.default, projectRoot);
   });
 });

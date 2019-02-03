@@ -52,5 +52,8 @@
     "rollup-plugin-auto-external": "^2.0.0",
     "sinon": "^7.2.3",
     "travis-lint": "^1.0.0"
+  },
+  "dependencies": {
+    "write-yaml": "^1.0.0"
   }
 }

@@ -17,10 +17,11 @@ suite('scaffolder', () => {
 
   test('that the config files are generated', async () => {
     const projectRoot = any.string();
+    const projectName = any.string();
     config.default.resolves();
 
-    assert.deepEqual(await scaffold({projectRoot}), {});
+    assert.deepEqual(await scaffold({projectRoot, projectName}), {});
 
-    assert.calledWith(config.default, projectRoot);
+    assert.calledWith(config.default, projectRoot, projectName);
   });
 });

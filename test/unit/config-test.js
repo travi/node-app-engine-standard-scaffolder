@@ -19,9 +19,10 @@ suite('config', () => {
 
   test('that the config files are generated', async () => {
     const projectRoot = any.string();
+    const projectName = any.string();
 
-    await config(projectRoot);
+    await config(projectRoot, projectName);
 
-    assert.calledWith(yamlWriter.default, `${projectRoot}/app.yaml`, {runtime: 'nodejs10'});
+    assert.calledWith(yamlWriter.default, `${projectRoot}/app.yaml`, {runtime: 'nodejs10', service: projectName});
   });
 });

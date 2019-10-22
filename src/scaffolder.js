@@ -1,7 +1,7 @@
 import generateConfig from './config';
 
-export default async function ({projectRoot}) {
-  await generateConfig(projectRoot);
+export default async function ({projectRoot, projectName}) {
+  await generateConfig(projectRoot, projectName);
 
   return {};
 }

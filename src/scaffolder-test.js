@@ -1,8 +1,8 @@
 import {assert} from 'chai';
 import sinon from 'sinon';
 import any from '@travi/any';
-import * as config from '../../src/config';
-import scaffold from '../../src/scaffolder';
+import * as config from './config';
+import scaffold from './scaffolder';
 
 suite('scaffolder', () => {
   let sandbox;

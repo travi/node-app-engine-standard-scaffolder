@@ -1,8 +1,8 @@
 import {assert} from 'chai';
 import sinon from 'sinon';
 import any from '@travi/any';
-import * as yamlWriter from '../../thirdparty-wrappers/write-yaml';
-import config from '../../src/config';
+import * as yamlWriter from '../thirdparty-wrappers/write-yaml';
+import config from './config';
 
 suite('config', () => {
   let sandbox;

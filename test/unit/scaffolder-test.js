@@ -18,10 +18,11 @@ suite('scaffolder', () => {
   test('that the config files are generated', async () => {
     const projectRoot = any.string();
     const projectName = any.string();
+    const nodeVersion = any.string();
     config.default.resolves();
 
-    assert.deepEqual(await scaffold({projectRoot, projectName}), {});
+    assert.deepEqual(await scaffold({projectRoot, projectName, nodeVersion}), {});
 
-    assert.calledWith(config.default, projectRoot, projectName);
+    assert.calledWith(config.default, projectRoot, projectName, nodeVersion);
   });
 });

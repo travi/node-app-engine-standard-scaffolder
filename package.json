@@ -21,6 +21,7 @@
     "lint:js": "eslint . --cache",
     "lint:travis": "travis-lint .travis.yml",
     "lint:sensitive": "ban",
+    "lint:peer": "npm ls >/dev/null",
     "test:unit:base": "mocha 'src/**/*-test.js'",
     "test:unit": "nyc run-s test:unit:base",
     "coverage:report": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
@@ -60,6 +61,6 @@
     "write-yaml": "^1.0.0"
   },
   "peerDependencies": {
-    "@travi/javascript-scaffolder": "^7.11.0 || ^8.0.0 || ^9.0.0"
+    "@travi/javascript-scaffolder": "^7.11.0 || ^8.0.0 || ^9.0.0 || ^10.0.0"
   }
 }

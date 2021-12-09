@@ -38,7 +38,7 @@
     "@travi/babel-preset": "3.0.69",
     "@travi/eslint-config": "1.0.90",
     "@travi/eslint-config-mocha": "1.0.14",
-    "@form8ion/javascript": "2.0.0",
+    "@travi/javascript-scaffolder": "14.14.7",
     "@travi/project-scaffolder": "10.1.2",
     "ban-sensitive-files": "1.9.16",
     "chai": "4.3.4",
@@ -61,6 +61,6 @@
     "write-yaml": "^1.0.0"
   },
   "peerDependencies": {
-    "@form8ion/javascript": "^7.11.0 || ^8.0.0 || ^9.0.0 || ^10.0.0 || ^11.0.0-alpha.1 || ^12.0.0 || ^12.2.6 || ^12.2.7 || ^13.0.0 || ^14.0.0 || ^2.0.0"
+    "@travi/javascript-scaffolder": "^7.11.0 || ^8.0.0 || ^9.0.0 || ^10.0.0 || ^11.0.0-alpha.1 || ^12.0.0 || ^12.2.6 || ^12.2.7 || ^13.0.0 || ^14.0.0"
   }
 }

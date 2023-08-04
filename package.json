@@ -17,6 +17,8 @@
   "bugs": "https://github.com/travi/node-app-engine-standard-scaffolder/issues",
   "homepage": "https://npm.im/@travi/node-app-engine-standard-scaffolder",
   "author": "Matt Travi <npm@travi.org> (https://matt.travi.org/)",
+  "main": "./lib/index.js",
+  "module": "./lib/index.mjs",
   "scripts": {
     "lint:md": "remark . --frail",
     "lint:js": "eslint . --cache",
@@ -24,13 +26,16 @@
     "lint:peer": "npm ls >/dev/null",
     "test:unit:base": "mocha 'src/**/*-test.js'",
     "test:unit": "cross-env NODE_ENV=test c8 run-s test:unit:base",
+    "pretest": "run-s build",
     "test": "npm-run-all --print-label --parallel lint:* --parallel test:*",
     "clean": "rimraf lib/",
+    "prebuild": "run-s clean",
     "build": "run-s clean build:*",
     "build:js": "rollup -c",
     "watch": "run-s 'build:js -- --watch'",
     "prepack": "run-s build",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "lint:publish": "publint --strict"
   },
   "devDependencies": {
     "@babel/register": "7.22.5",
@@ -48,6 +53,7 @@
     "husky": "8.0.3",
     "mocha": "10.2.0",
     "npm-run-all": "4.1.5",
+    "publint": "0.2.0",
     "remark-cli": "11.0.0",
     "remark-preset-lint-travi": "6.0.1",
     "rimraf": "5.0.1",

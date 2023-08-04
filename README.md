@@ -6,6 +6,7 @@ host scaffolder for [node.js](https://nodejs.org/) applications hosted on [app-e
 
 [![Codecov][coverage-badge]][coverage-link]
 [![Node CI Workflow Status][github-actions-ci-badge]][github-actions-ci-link]
+![SLSA Level 2][slsa-badge]
 
 <!--status-badges end -->
 
@@ -84,3 +85,5 @@ $ npm test
 [github-actions-ci-link]: https://github.com/travi/node-app-engine-standard-scaffolder/actions?query=workflow%3A%22Node.js+CI%22+branch%3Amaster
 
 [github-actions-ci-badge]: https://github.com/travi/node-app-engine-standard-scaffolder/workflows/Node.js%20CI/badge.svg
+
+[slsa-badge]: https://slsa.dev/images/gh-badge-level2.svg

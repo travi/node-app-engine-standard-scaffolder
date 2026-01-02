@@ -1,3 +1,4 @@
 extends:
   - '@travi'
   - '@form8ion/vitest'
+  - '@travi/cucumber'

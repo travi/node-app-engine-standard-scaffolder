@@ -27,7 +27,8 @@
     "watch": "run-s 'build:js -- --watch'",
     "prepack": "run-s build",
     "prepare": "husky install",
-    "lint:publish": "publint --strict"
+    "lint:publish": "publint --strict",
+    "lint:lockfile": "lockfile-lint"
   },
   "files": [
     "lib/"
@@ -54,6 +55,7 @@
     "cross-env": "10.1.0",
     "cz-conventional-changelog": "3.3.0",
     "husky": "9.1.7",
+    "lockfile-lint": "4.14.1",
     "mocha": "11.7.5",
     "npm-run-all2": "8.0.4",
     "publint": "0.3.16",

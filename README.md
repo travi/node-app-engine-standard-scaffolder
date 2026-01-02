@@ -52,15 +52,15 @@ $ npm test
 
 [npm-link]: https://www.npmjs.com/package/@travi/node-app-engine-standard-scaffolder
 
-[npm-badge]: https://img.shields.io/npm/v/@travi/node-app-engine-standard-scaffolder.svg
+[npm-badge]: https://img.shields.io/npm/v/@travi/node-app-engine-standard-scaffolder?logo=npm
 
 [license-link]: LICENSE
 
-[license-badge]: https://img.shields.io/github/license/travi/node-app-engine-standard-scaffolder.svg
+[license-badge]: https://img.shields.io/github/license/travi/node-app-engine-standard-scaffolder.svg?logo=opensourceinitiative
 
 [coverage-link]: https://codecov.io/github/travi/node-app-engine-standard-scaffolder
 
-[coverage-badge]: https://img.shields.io/codecov/c/github/travi/node-app-engine-standard-scaffolder.svg
+[coverage-badge]: https://img.shields.io/codecov/c/github/travi/node-app-engine-standard-scaffolder?logo=codecov
 
 [commit-convention-link]: https://conventionalcommits.org
 

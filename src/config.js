@@ -1,5 +1,5 @@
 import {info} from '@travi/cli-messages';
-import writeYaml from '../thirdparty-wrappers/write-yaml';
+import writeYaml from '../thirdparty-wrappers/write-yaml.js';
 
 export default function (projectRoot, projectName, nodeVersion) {
   info('Generating App Engine Config');

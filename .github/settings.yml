@@ -1,7 +1,7 @@
 repository:
   name: node-app-engine-standard-scaffolder
   description: host scaffolder for node.js applications hosted on app-engine standard
-  homepage: 'https://npm.im/@travi/node-app-engine-standard-scaffolder'
+  homepage: https://npm.im/@travi/node-app-engine-standard-scaffolder
   private: false
   has_wiki: false
   has_projects: false
@@ -30,12 +30,38 @@ labels:
     color: 00c775
 branches:
   - name: master
-    protection:
-      required_pull_request_reviews: null
-      required_status_checks: null
-      restrictions: null
-      enforce_admins: true
+    protection: null
 collaborators:
   - username: travi-bot
     permission: push
-
+rulesets:
+  - name: prevent destruction of the default branch
+    target: branch
+    enforcement: active
+    conditions:
+      ref_name:
+        include:
+          - ~DEFAULT_BRANCH
+        exclude: []
+    rules:
+      - type: deletion
+      - type: non_fast_forward
+  - name: verification must pass
+    target: branch
+    enforcement: active
+    conditions:
+      ref_name:
+        include:
+          - ~DEFAULT_BRANCH
+        exclude: []
+    rules:
+      - type: required_status_checks
+        parameters:
+          strict_required_status_checks_policy: false
+          required_status_checks:
+            - context: workflow-result
+              integration_id: 15368
+    bypass_actors:
+      - actor_id: 5
+        actor_type: RepositoryRole
+        bypass_mode: always

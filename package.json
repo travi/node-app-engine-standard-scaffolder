@@ -13,6 +13,7 @@
   "scripts": {
     "lint:md": "remark . --frail",
     "lint:js": "eslint . --cache",
+    "lint:js:fix": "run-s 'lint:js -- --fix'",
     "lint:sensitive": "ban",
     "lint:peer": "npm ls >/dev/null",
     "test:unit:base": "mocha 'src/**/*-test.js'",

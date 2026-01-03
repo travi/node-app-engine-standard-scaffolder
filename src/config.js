@@ -1,8 +1,9 @@
+import {promises as fs} from 'node:fs';
+import {stringify} from 'yaml';
 import {info} from '@travi/cli-messages';
-import writeYaml from '../thirdparty-wrappers/write-yaml.js';
 
 export default function scaffoldConfig(projectRoot, projectName, nodeVersion) {
   info('Generating App Engine Config');
 
-  return writeYaml(`${projectRoot}/app.yaml`, {runtime: `nodejs${nodeVersion}`, service: projectName});
+  return fs.writeFile(`${projectRoot}/app.yaml`, stringify({runtime: `nodejs${nodeVersion}`, service: projectName}));
 }

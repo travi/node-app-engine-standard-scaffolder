@@ -54,7 +54,7 @@
   "devDependencies": {
     "@babel/register": "7.29.7",
     "@cucumber/cucumber": "12.9.0",
-    "@form8ion/core": "4.11.1",
+    "@form8ion/core": "4.11.2",
     "@form8ion/eslint-config-vitest": "1.1.0",
     "@form8ion/javascript": "15.8.4",
     "@travi/any": "3.3.0",
